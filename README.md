@@ -60,7 +60,7 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 <div align="center">
 
 <img width="897" height="704" alt="image" src="https://github.com/user-attachments/assets/ff3202dc-a056-41a6-8514-fbaadbe0cdff" />
-<img width="897" height="704" alt="image" src="https://github.com/user-attachments/assets/ff3202dc-a056-41a6-8514-fbaadbe0cdff" />
+
 
 
 
