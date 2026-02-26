@@ -1,11 +1,10 @@
 <div align="center">
 
-infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
+
 
 ## 📝 소개
-백엔드 깃 레파지토리의 README.md를 빠르게 작성하기 위해 만든 템플릿입니다.
+infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 
-다음과 같은 내용을 작성할 수 있습니다.
 - <img width="1893" height="921" alt="image" src="https://github.com/user-attachments/assets/0797b5ef-b189-4157-b580-673022f08002" />
 infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 - <img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/NodeJS.png" width="100"><img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/MongoDB.png" width="100">
