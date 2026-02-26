@@ -34,7 +34,6 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 <br />
 
 ## ⚙ 기술 스택
-> skills 폴더에 있는 아이콘을 이용할 수 있습니다.
 ### Back-end
 <div>
 <img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/NodeJS.png?raw=true" width="80">
