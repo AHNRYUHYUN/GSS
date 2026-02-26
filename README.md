@@ -59,42 +59,9 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 ## 🛠️ 프로젝트 아키텍쳐
 
 <div align="center">
+<img width="1536" height="1024" alt="8269b73d-35f9-48a5-9082-0e4b204f5904" src="https://github.com/user-attachments/assets/a41c59ec-32ef-4686-bb75-8949de021f72" />
 
-<pre>
-┌──────────────────── 현장(빌딩) ────────────────────┐
-│  [각도 노드 / 도어 노드]  -->  [게이트웨이]        │
-└───────────────────────┬─────────────────────────────┘
-                        |
-                        |  MQTT (ingest)
-                        v
-                ┌──────────────────┐
-                │   MQTT Broker    │
-                └────────┬─────────┘
-                         |
-                         |  subscribe
-                         v
-                ┌──────────────────────────┐
-                │   Node.js (Express)      │
-                │   - Routes / Controllers │
-                │   - Services             │
-                │   - Socket.IO            │
-                └─────────┬─────────┬──────┘
-                      save/agg      | push
-                                    |
-                                    v
-                            ┌──────────────┐
-                            │  Web Clients │
-                            │ (Dashboard)  │
-                            └──────────────┘
-                                    |
-                                    v
-                ┌─────────────────────────────┐
-                │          MongoDB            │
-                │      (Models / Schemas)     │
-                └─────────────────────────────┘
-</pre>
 
-</div>
 
 
 <br />
