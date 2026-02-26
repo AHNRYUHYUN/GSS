@@ -5,12 +5,12 @@
 ## 📝 소개
 infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 
-- <img width="1893" height="921" alt="image" src="https://github.com/user-attachments/assets/0797b5ef-b189-4157-b580-673022f08002" />
+ <img width="1893" height="921" alt="image" src="https://github.com/user-attachments/assets/0797b5ef-b189-4157-b580-673022f08002" />
 infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
-- <img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/NodeJS.png" width="100"><img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/MongoDB.png" width="100">
-- 프로젝트 아키텍쳐
-- 기술적 이슈와 해결 과정
-- 프로젝트 팀원
+
+## 🛠 기술 스택
+<img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/NodeJS.png" width="100"><img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/MongoDB.png" width="100">
+
 
 
 
@@ -19,7 +19,7 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 > 화면 구성과 프로토 타입 중 원하는 것을 사용해주세요.
 
 ### 화면 구성
-- <img width="1893" height="921" alt="image" src="https://github.com/user-attachments/assets/0797b5ef-b189-4157-b580-673022f08002" />
+ <img width="1893" height="921" alt="image" src="https://github.com/user-attachments/assets/0797b5ef-b189-4157-b580-673022f08002" />
 
 
 
@@ -57,6 +57,7 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 <br />
 
 ## 🛠️ 프로젝트 아키텍쳐
+<div align="center">
 ```
 ┌─────────────── 현장(빌딩) ───────────────┐
 │  [각도 노드/도어 노드] ──► [게이트웨이]  │
