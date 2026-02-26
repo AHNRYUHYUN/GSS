@@ -3,7 +3,7 @@
 
 
 ## 📝 소개
-infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
+
 
  <img width="1893" height="921" alt="image" src="https://github.com/user-attachments/assets/0797b5ef-b189-4157-b580-673022f08002" />
 infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
