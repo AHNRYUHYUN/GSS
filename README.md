@@ -5,7 +5,7 @@
 ## 📝 소개
 
 
- <img width="1893" height="921" alt="image" src="https://github.com/user-attachments/assets/0797b5ef-b189-4157-b580-673022f08002" />
+
 infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 
 ## 🛠 기술 스택
@@ -59,7 +59,7 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 ## 🛠️ 프로젝트 아키텍쳐
 
 <div align="center">
-<img width="1536" height="1024" alt="8269b73d-35f9-48a5-9082-0e4b204f5904" src="https://github.com/user-attachments/assets/a41c59ec-32ef-4686-bb75-8949de021f72" />
+
 
 
 
