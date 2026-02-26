@@ -44,7 +44,7 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 ### Infra
 <div>
 <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/AWSEC2.png?raw=true" width="80">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/AWSEC2.png?raw=true" width="80">
+
 </div>
 
 ### Tools
