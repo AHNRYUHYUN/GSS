@@ -16,7 +16,7 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 
 <br />
 
-> 화면 구성과 프로토 타입 중 원하는 것을 사용해주세요.
+
 
 ### 화면 구성
  <img width="1893" height="921" alt="image" src="https://github.com/user-attachments/assets/0797b5ef-b189-4157-b580-673022f08002" />
