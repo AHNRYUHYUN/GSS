@@ -28,7 +28,7 @@ infogssiot.com 사이트에 대한 내용을 제공하는 파일입니다.
 ## 🗂️ APIs
 작성한 API는 아래에서 확인할 수 있습니다.
 
-👉🏻 [API 바로보기](/backend/APIs.md)
+👉🏻 [API 바로보기](https://github.com/AHNRYUHYUN/GSS/blob/main/APIs.md)
 
 
 <br />
