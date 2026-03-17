@@ -11,55 +11,60 @@
 ---
 
 ## 📝 프로젝트 소개
-건설 현장 내 **비계(가설 구조물)의 기울어짐 및 붕괴 징후를 실시간으로 포착**하여 인명 사고를 예방하는 IoT 관제 시스템입니다. 센서 설치 시 발생하는 물리적 오차를 백엔드 로직으로 보정하여 데이터 신뢰성을 확보하고, 대규모 시계열 데이터를 안정적으로 처리하는 데 집중했습니다.
+건설 현장의 핵심 가설 구조물인 **비계(Scaffolding)의 안전 상태를 실시간으로 관제**하는 시스템입니다. MPU-6500 센서로부터 수집되는 미세한 기울기 및 진동 데이터를 백엔드에서 정밀 가공하여 사고를 사전에 예방합니다. 저사양 하드웨어의 한계를 소프트웨어 로직으로 극복하고, 대규모 시계열 데이터의 안정적인 흐름을 설계하는 데 주력했습니다.
 
-## 🛠 기술 스택
+## ⚙️ 기술 스택
 
 ### Back-end & Database
-<img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/NodeJS.png?raw=true" width="80"> <img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/MongoDB.png?raw=true" width="80">
+<div align="left">
+<img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/NodeJS.png?raw=true" width="80"> 
+<img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/MongoDB.png?raw=true" width="80">
+</div>
 
 ### Infra & Tools
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/AWSEC2.png?raw=true" width="80"> <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Github.png?raw=true" width="80"> <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Notion.png?raw=true" width="80">
-
----
-
-## ⚙️ 프로젝트 아키텍처
-<div align="center">
-<img width="700" alt="시스템 아키텍처" src="https://github.com/user-attachments/assets/ff3202dc-a056-41a6-8514-fbaadbe0cdff" />
+<div align="left">
+<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/AWSEC2.png?raw=true" width="80"> 
+<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Github.png?raw=true" width="80"> 
+<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Notion.png?raw=true" width="80">
 </div>
 
 ---
 
-## 🗂️ APIs
-설계 및 구현된 상세 API 명세는 아래 링크에서 확인할 수 있습니다.
+## 🛠️ 프로젝트 아키텍처
+<div align="center">
+<img width="800" alt="시스템 아키텍처" src="https://github.com/user-attachments/assets/ff3202dc-a056-41a6-8514-fbaadbe0cdff" />
+</div>
+
+---
+
+## 🗂️ APIs 명세
+프로젝트에 적용된 RESTful API 설계 및 상세 명세입니다.
 👉🏻 [API 명세서 바로보기](https://github.com/AHNRYUHYUN/GSS/blob/main/APIs.md)
 
 ---
 
-## 📌 주요 역할 및 성과
+## 📌 주요 담당 업무 및 해결 경험 (My Role)
 
-### 1. 실시간 데이터 파이프라인 엔진 구축
-- **MQTT & Socket.io**: MQTT 프로토콜로 수신되는 센서 데이터를 `EventEmitter`를 통해 처리 로직과 분리하여 결합도를 낮췄습니다.
-- **동적 브로드캐스팅**: 건물/구역별 ID를 기준으로 소켓 토픽을 분류하여 실시간 데이터를 효율적으로 전송하도록 설계했습니다.
+### 1. 실시간 데이터 파이프라인 및 이벤트 중심 설계
+- **MQTT 기반 수집 엔진**: `mqttEmitter`와 `EventEmitter`를 활용하여 데이터 수신부와 저장/전송 로직 간의 결합도를 낮추는 아키텍처를 설계했습니다.
+- **Socket.io 최적화**: 수신된 데이터를 전체 전송하지 않고, `building_id` 기반의 룸(Room) 기능을 사용하여 필요한 대상에게만 실시간 브로드캐스팅하도록 최적화했습니다.
 
-### 2. 서버 측 중앙 집중형 보정(Calibration) 로직
-- **문제 해결**: 센서 설치 환경에 따른 물리적 기울기 오차를 해결하기 위해 초기 샘플링 기반의 자동 보정 알고리즘을 구현했습니다.
-- **성과**: 하드웨어마다 개별 코드를 주입할 필요 없이 서버에서 0점을 조절함으로써 **단말기 자원 최적화 및 운영 효율성 100% 향상**을 달성했습니다.
+### 2. 서버 측 자동 보정(Calibration)을 통한 HW 최적화
+- **0점 조절 자동화**: 센서 설치 시 발생하는 물리적 오차를 해결하기 위해 초기 샘플링 데이터를 서버에서 분석하여 `Offset`을 산출하는 알고리즘을 구현했습니다.
+- **HW 리소스 경감**: 하드웨어에서 수행하던 보정 연산을 서버로 이전하여 단말기의 메모리 및 CPU 부하를 제거하고, 하드웨어 배포 시 개별 설정이 필요 없는 환경을 구축했습니다.
 
-### 3. 대용량 시계열 데이터 처리 최적화
-- **스트리밍 추출**: 수만 건의 데이터를 CSV로 추출 시 발생하는 메모리 부하를 방지하기 위해 **MongoDB Cursor 기반 스트리밍** 방식을 도입했습니다.
-- **데이터 무결성**: 수집 시점의 위치 정보(Zone, Position)를 함께 기록하는 스냅샷 아키텍처를 적용하여 데이터 정합성을 확보했습니다.
-
----
-
-## 🎯 주요 성과 지표
-| 지표 (Metric) | 결과 (Result) | 비고 |
-| :--- | :--- | :--- |
-| **데이터 정밀도** | **100% 확보** | 자동 보정 알고리즘 적용 결과 |
-| **메모리 안정성** | **OOM 발생 0건** | Cursor 기반 스트리밍 처리 도입 |
-| **조회 응답 속도** | **약 40% 개선** | 인메모리 Map 캐싱 및 DB 인덱싱 최적화 |
+### 3. 고성능 데이터 처리 및 관리 서비스 구현
+- **대용량 데이터 스트리밍**: 수만 건의 시계열 로그를 CSV로 추출 시 서버 다운을 방지하기 위해 `MongoDB Cursor` 기반의 스트리밍 방식을 도입했습니다.
+- **조회 속도 개선 (Map Caching)**: 수천 개의 노드 정보를 조회할 때 발생하는 DB 부하를 줄이기 위해 게이트웨이 정보를 `Map` 객체로 인메모리 캐싱하여 응답 속도를 약 40% 단축했습니다.
+- **동적 자원 관리**: 게이트웨이의 `zone_name` 수정 등 마스터 데이터 관리 CRUD API를 구축하고, 데이터 수집 시점의 위치 정보를 스냅샷 형태로 기록하여 정합성을 확보했습니다.
 
 ---
+
+## 🎯 주요 성과 및 결과 (Performance)
+- **데이터 신뢰성 100% 확보**: 서버 측 자동 보정 알고리즘 적용을 통한 정밀 측정 가능
+- **서버 안정성 확보**: Cursor 기반 처리로 대용량 데이터 추출 시에도 메모리 점유율 일정 유지 (OOM 방지)
+- **운영 효율성 극대화**: 하드웨어 개별 설정 없는 중앙 관리 시스템 구축으로 유지보수 공수 절감
+- **수상 실적**: 2024 캡스톤디자인 경진대회 대상 (시스템 안정성 및 실제 적용 가능성 인정)
 
 ## 💡 Lessons Learned
-백엔드 개발자가 단순히 데이터만 저장하는 것이 아니라, 하드웨어의 자원 한계를 이해하고 시스템 전체의 지연(Latency)을 조율하는 **컨트롤 타워** 역할을 해야 함을 체득했습니다. 특히 SW 로직으로 HW 공정 효율을 높였던 경험은 기술적 선택이 비즈니스 가치로 직결됨을 깨닫는 계기가 되었습니다.
+하드웨어-AI-백엔드가 결합된 복합 시스템에서 백엔드 개발자의 역할이 단순 저장을 넘어 전체 시스템의 **Latency를 조율하고 데이터를 정제하는 컨트롤 타워**임을 배웠습니다. 특히 기술적 선택이 하드웨어 원가 절감과 운영 편의성으로 이어지는 과정을 경험하며 비즈니스 관점의 개발 역량을 강화했습니다.
