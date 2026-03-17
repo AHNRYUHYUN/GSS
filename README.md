@@ -36,20 +36,27 @@
 | 팀원 B | Hardware | 하드웨어 노드 제작 및 센서 데이터 송신 펌웨어 구성 |
 
 ---
-## ⚙️ 기술 스택
-
-### Back-end & Database
-<div align="left">
-<img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/NodeJS.png?raw=true" width="80"> 
+## ⚙ 기술 스택
+### Back-end
+<div>
+<img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/NodeJS.png?raw=true" width="80">
 <img src="https://github.com/AHNRYUHYUN/AHNRYUHYUN/blob/main/skills/MongoDB.png?raw=true" width="80">
+
 </div>
 
-### Infra & Tools
-<div align="left">
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/AWSEC2.png?raw=true" width="80"> 
-<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Github.png?raw=true" width="80"> 
+### Infra
+<div>
+<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/AWSEC2.png?raw=true" width="80">
+
+</div>
+
+### Tools
+<div>
+<img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Github.png?raw=true" width="80">
 <img src="https://github.com/yewon-Noh/readme-template/blob/main/skills/Notion.png?raw=true" width="80">
 </div>
+
+<br />
 
 ---
 
