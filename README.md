@@ -1,6 +1,6 @@
 <div align="center">
 
-# 🏭 비계 및 시설물 안전 관리를 위한 실시간 모니터링 시스템: GSS
+#  비계 및 시설물 안전 관리를 위한 실시간 모니터링 시스템: GSS
 
 ### [infogssiot.com](https://infogssiot.com) 운영 및 기술 지원
 
