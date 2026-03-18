@@ -60,13 +60,6 @@
 
 ---
 
-## 🛠️ 프로젝트 아키텍처
-<div align="center">
-<img width="800" alt="시스템 아키텍처" src="https://github.com/user-attachments/assets/ff3202dc-a056-41a6-8514-fbaadbe0cdff" />
-</div>
-
----
-
 ## 🗂️ APIs 명세
 프로젝트에 적용된 RESTful API 설계 및 상세 명세입니다.
 👉🏻 [API 명세서 바로보기](https://github.com/AHNRYUHYUN/GSS/blob/main/APIs.md)
