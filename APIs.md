@@ -277,13 +277,13 @@ controllers/
 
 ---
 
-## 6) 배치/운영 작업
+## 배치/운영 작업
 
 - **Heartbeat Job**: `lastSeen` 기반으로 게이트웨이·각도노드 `alive` 상태 일괄 갱신  
 - **Weather Ingest**: 빌딩 주소 지오코딩 → OWM 호출 → `Weather` 저장  
 - **Report Engine**: 기간/빌딩 기준 통계로 **HWPX/CSV** 생성
 
-## 10) 리포트 생성
+## 리포트 생성
 
 - **HWPX**: `reportDailyCombined.service` + `reportTable1.service` + `reportTableZones.service`
 - **CSV**: `reportNodesCsv.service` (중복 제거, 파일명 안전화, 빌딩·구역·GW 정보 포함)
